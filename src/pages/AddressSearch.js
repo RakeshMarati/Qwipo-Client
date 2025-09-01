@@ -97,7 +97,7 @@ const AddressSearch = () => {
           </Typography>
 
           <Grid container spacing={2} alignItems="center">
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid item xs={12} sm={6} lg={3}>
               <TextField
                 fullWidth
                 label="City"
@@ -106,7 +106,7 @@ const AddressSearch = () => {
                 placeholder="Enter city name..."
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid item xs={12} sm={6} lg={3}>
               <TextField
                 fullWidth
                 label="State"
@@ -115,7 +115,7 @@ const AddressSearch = () => {
                 placeholder="Enter state name..."
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid item xs={12} sm={6} lg={3}>
               <TextField
                 fullWidth
                 label="PIN Code"
@@ -124,7 +124,7 @@ const AddressSearch = () => {
                 placeholder="Enter 6-digit PIN code..."
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid item xs={12} sm={6} lg={3}>
               <Box display="flex" gap={1}>
                 <Button
                   variant="contained"

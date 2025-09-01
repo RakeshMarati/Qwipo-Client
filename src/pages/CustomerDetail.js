@@ -182,7 +182,7 @@ const CustomerDetail = () => {
 
       <Grid container spacing={3}>
         {/* Customer Information */}
-        <Grid xs={12} lg={6}>
+        <Grid item xs={12} lg={6}>
           <Card>
             <CardContent>
               <Typography variant="h5" gutterBottom>
@@ -191,7 +191,7 @@ const CustomerDetail = () => {
               <Divider sx={{ mb: 2 }} />
               
               <Grid container spacing={2}>
-                <Grid xs={6}>
+                <Grid item xs={6}>
                   <Typography variant="body2" color="text.secondary">
                     Customer ID
                   </Typography>
@@ -199,7 +199,7 @@ const CustomerDetail = () => {
                     #{customer.id}
                   </Typography>
                 </Grid>
-                <Grid xs={6}>
+                <Grid item xs={6}>
                   <Typography variant="body2" color="text.secondary">
                     Address Count
                   </Typography>
@@ -209,7 +209,7 @@ const CustomerDetail = () => {
                     size="small"
                   />
                 </Grid>
-                <Grid xs={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="body2" color="text.secondary">
                     First Name
                   </Typography>
@@ -217,7 +217,7 @@ const CustomerDetail = () => {
                     {customer.first_name}
                   </Typography>
                 </Grid>
-                <Grid xs={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="body2" color="text.secondary">
                     Last Name
                   </Typography>
@@ -225,7 +225,7 @@ const CustomerDetail = () => {
                     {customer.last_name}
                   </Typography>
                 </Grid>
-                <Grid xs={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="body2" color="text.secondary">
                     Phone Number
                   </Typography>
@@ -233,7 +233,7 @@ const CustomerDetail = () => {
                     {customer.phone_number}
                   </Typography>
                 </Grid>
-                <Grid xs={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                   <Typography variant="body2" color="text.secondary">
                     Email
                   </Typography>
@@ -241,7 +241,7 @@ const CustomerDetail = () => {
                     {customer.email || 'Not provided'}
                   </Typography>
                 </Grid>
-                <Grid xs={6}>
+                <Grid item xs={6}>
                   <Typography variant="body2" color="text.secondary">
                     Created Date
                   </Typography>
@@ -249,7 +249,7 @@ const CustomerDetail = () => {
                     {formatDate(customer.created_at)}
                   </Typography>
                 </Grid>
-                <Grid xs={6}>
+                <Grid item xs={6}>
                   <Typography variant="body2" color="text.secondary">
                     Last Updated
                   </Typography>
@@ -263,7 +263,7 @@ const CustomerDetail = () => {
         </Grid>
 
         {/* Addresses */}
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
               <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>

@@ -174,7 +174,7 @@ const CustomerList = () => {
             Search & Filters
           </Typography>
           <Grid container spacing={2} alignItems="center">
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid item xs={12} sm={6} lg={3}>
               <TextField
                 fullWidth
                 label="Search"
@@ -186,7 +186,7 @@ const CustomerList = () => {
                 }}
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={2}>
+            <Grid item xs={12} sm={6} lg={2}>
               <TextField
                 fullWidth
                 label="City"
@@ -194,7 +194,7 @@ const CustomerList = () => {
                 onChange={(e) => handleFilterChange('city', e.target.value)}
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={2}>
+            <Grid item xs={12} sm={6} lg={2}>
               <TextField
                 fullWidth
                 label="State"
@@ -202,7 +202,7 @@ const CustomerList = () => {
                 onChange={(e) => handleFilterChange('state', e.target.value)}
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={2}>
+            <Grid item xs={12} sm={6} lg={2}>
               <TextField
                 fullWidth
                 label="PIN Code"
@@ -210,7 +210,7 @@ const CustomerList = () => {
                 onChange={(e) => handleFilterChange('pin_code', e.target.value)}
               />
             </Grid>
-            <Grid xs={12} sm={6} lg={1}>
+            <Grid item xs={12} sm={6} lg={1}>
               <FormControl fullWidth>
                 <InputLabel>Sort By</InputLabel>
                 <Select
@@ -225,7 +225,7 @@ const CustomerList = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid xs={12} sm={6} lg={1}>
+            <Grid item xs={12} sm={6} lg={1}>
               <FormControl fullWidth>
                 <InputLabel>Order</InputLabel>
                 <Select
@@ -238,7 +238,7 @@ const CustomerList = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid xs={12} sm={6} lg={1}>
+            <Grid item xs={12} sm={6} lg={1}>
               <Button
                 fullWidth
                 variant="outlined"

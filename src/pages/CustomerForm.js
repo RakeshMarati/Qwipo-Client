@@ -266,7 +266,7 @@ const CustomerForm = () => {
           {activeStep === 0 ? (
             // Step 1: Customer Information
             <Grid container spacing={3}>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="First Name"
@@ -277,7 +277,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Last Name"
@@ -288,7 +288,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Phone Number"
@@ -299,7 +299,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="Email (Optional)"
@@ -314,7 +314,7 @@ const CustomerForm = () => {
           ) : activeStep === 1 ? (
             // Step 2: Address Information
             <Grid container spacing={3}>
-              <Grid xs={12}>
+              <Grid item xs={12}>
                 <TextField
                   fullWidth
                   label="Address Details"
@@ -327,7 +327,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="City"
@@ -338,7 +338,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="State"
@@ -349,7 +349,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
                   label="PIN Code"
@@ -360,7 +360,7 @@ const CustomerForm = () => {
                   required
                 />
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -379,7 +379,7 @@ const CustomerForm = () => {
                 Review Customer Information
               </Typography>
               <Grid container spacing={2}>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     First Name
                   </Typography>
@@ -387,7 +387,7 @@ const CustomerForm = () => {
                     {formData.first_name}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     Last Name
                   </Typography>
@@ -395,7 +395,7 @@ const CustomerForm = () => {
                     {formData.last_name}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     Phone Number
                   </Typography>
@@ -403,7 +403,7 @@ const CustomerForm = () => {
                     {formData.phone_number}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     Email
                   </Typography>
@@ -419,7 +419,7 @@ const CustomerForm = () => {
                 Address Information
               </Typography>
               <Grid container spacing={2}>
-                <Grid xs={12}>
+                <Grid item xs={12}>
                   <Typography variant="body2" color="text.secondary">
                     Address Details
                   </Typography>
@@ -427,7 +427,7 @@ const CustomerForm = () => {
                     {addressData.address_details}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     City
                   </Typography>
@@ -435,7 +435,7 @@ const CustomerForm = () => {
                     {addressData.city}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     State
                   </Typography>
@@ -443,7 +443,7 @@ const CustomerForm = () => {
                     {addressData.state}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     PIN Code
                   </Typography>
@@ -451,7 +451,7 @@ const CustomerForm = () => {
                     {addressData.pin_code}
                   </Typography>
                 </Grid>
-                <Grid xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <Typography variant="body2" color="text.secondary">
                     Primary Address
                   </Typography>

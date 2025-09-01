@@ -88,7 +88,7 @@ const AddressForm = ({ address, onSubmit, onCancel }) => {
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{ pt: 1 }}>
       <Grid container spacing={3}>
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <TextField
             fullWidth
             label="Address Details"
@@ -103,7 +103,7 @@ const AddressForm = ({ address, onSubmit, onCancel }) => {
           />
         </Grid>
         
-        <Grid xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
           <TextField
             fullWidth
             label="City"
@@ -115,7 +115,7 @@ const AddressForm = ({ address, onSubmit, onCancel }) => {
           />
         </Grid>
         
-        <Grid xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
           <TextField
             fullWidth
             label="State"
@@ -127,7 +127,7 @@ const AddressForm = ({ address, onSubmit, onCancel }) => {
           />
         </Grid>
         
-        <Grid xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
           <TextField
             fullWidth
             label="PIN Code"
@@ -140,7 +140,7 @@ const AddressForm = ({ address, onSubmit, onCancel }) => {
           />
         </Grid>
         
-        <Grid xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
           <FormControlLabel
             control={
               <Checkbox
